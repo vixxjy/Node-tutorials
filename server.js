@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 const port = process.env.PORT || 3000;
 
 // connecting to mongodb
-MongoClient.connect('mongodb://listcar:list.1@ds147034.mlab.com:47034/listcars', (err, database) =>
+MongoClient.connect('your-database-credentials', (err, database) =>
 {
 	// checking for err in connection
 	if(err){
